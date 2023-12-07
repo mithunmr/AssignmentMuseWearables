@@ -8,17 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		0EFF39E62B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF39E52B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift */; };
-		0EFF39E82B2060AB0040A1BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF39E72B2060AB0040A1BE /* ContentView.swift */; };
 		0EFF39EA2B2060AD0040A1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFF39E92B2060AD0040A1BE /* Assets.xcassets */; };
 		0EFF39ED2B2060AD0040A1BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFF39EC2B2060AD0040A1BE /* Preview Assets.xcassets */; };
+		0EFF39F62B2060FF0040A1BE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF39F52B2060FF0040A1BE /* Home.swift */; };
+		0EFF39FC2B20748F0040A1BE /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF39FB2B20748F0040A1BE /* Categories.swift */; };
+		0EFF3A002B2077650040A1BE /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF39FF2B2077650040A1BE /* SearchBar.swift */; };
+		0EFF3A032B208E130040A1BE /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A022B208E130040A1BE /* CategoryItem.swift */; };
+		0EFF3A062B2095890040A1BE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A052B2095890040A1BE /* Category.swift */; };
+		0EFF3A092B209D870040A1BE /* CategoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A082B209D870040A1BE /* CategoriesItem.swift */; };
+		0EFF3A0C2B20B5230040A1BE /* AboutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A0B2B20B5230040A1BE /* AboutItem.swift */; };
+		0EFF3A0E2B20D6E30040A1BE /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A0D2B20D6E30040A1BE /* CategoriesViewModel.swift */; };
+		0EFF3A102B20D6F90040A1BE /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A0F2B20D6F90040A1BE /* CategoriesModel.swift */; };
+		0EFF3A152B20D9ED0040A1BE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A142B20D9ED0040A1BE /* NetworkManager.swift */; };
+		0EFF3A182B20E42F0040A1BE /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A172B20E42F0040A1BE /* CategoryViewModel.swift */; };
+		0EFF3A1A2B20E5950040A1BE /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A192B20E5950040A1BE /* CategoryModel.swift */; };
+		0EFF3A1C2B2167760040A1BE /* AboutItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A1B2B2167760040A1BE /* AboutItemViewModel.swift */; };
+		0EFF3A1F2B218B4D0040A1BE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A1E2B218B4D0040A1BE /* Address.swift */; };
+		0EFF3A222B219DBA0040A1BE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A212B219DBA0040A1BE /* Main.swift */; };
+		0EFF3A242B21D2710040A1BE /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A232B21D2710040A1BE /* AddressViewModel.swift */; };
+		0EFF3A282B2202770040A1BE /* Billing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A272B2202770040A1BE /* Billing.swift */; };
+		0EFF3A2A2B2210950040A1BE /* BillingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A292B2210950040A1BE /* BillingViewModel.swift */; };
+		0EFF3A2D2B2223060040A1BE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A2C2B2223060040A1BE /* Profile.swift */; };
+		0EFF3A2F2B2223110040A1BE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */; };
+		0EFF3A322B222A5C0040A1BE /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFF3A312B222A5C0040A1BE /* SQLite */; };
+		0EFF3A352B2238160040A1BE /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFF3A342B2238160040A1BE /* Stripe */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EFF39E22B2060AB0040A1BE /* AssignmentMuseWearables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentMuseWearables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFF39E52B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentMuseWearablesApp.swift; sourceTree = "<group>"; };
-		0EFF39E72B2060AB0040A1BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EFF39E92B2060AD0040A1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EFF39EC2B2060AD0040A1BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0EFF39F52B2060FF0040A1BE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0EFF39FB2B20748F0040A1BE /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		0EFF39FF2B2077650040A1BE /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		0EFF3A022B208E130040A1BE /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		0EFF3A052B2095890040A1BE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0EFF3A082B209D870040A1BE /* CategoriesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesItem.swift; sourceTree = "<group>"; };
+		0EFF3A0B2B20B5230040A1BE /* AboutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutItem.swift; sourceTree = "<group>"; };
+		0EFF3A0D2B20D6E30040A1BE /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A0F2B20D6F90040A1BE /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		0EFF3A142B20D9ED0040A1BE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0EFF3A162B20DC7A0040A1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0EFF3A172B20E42F0040A1BE /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A192B20E5950040A1BE /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		0EFF3A1B2B2167760040A1BE /* AboutItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutItemViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A1E2B218B4D0040A1BE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		0EFF3A212B219DBA0040A1BE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		0EFF3A232B21D2710040A1BE /* AddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A272B2202770040A1BE /* Billing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billing.swift; sourceTree = "<group>"; };
+		0EFF3A292B2210950040A1BE /* BillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A2C2B2223060040A1BE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EFF3A322B222A5C0040A1BE /* SQLite in Frameworks */,
+				0EFF3A352B2238160040A1BE /* Stripe in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +94,11 @@
 		0EFF39E42B2060AB0040A1BE /* AssignmentMuseWearables */ = {
 			isa = PBXGroup;
 			children = (
+				0EFF3A162B20DC7A0040A1BE /* Info.plist */,
 				0EFF39E52B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift */,
-				0EFF39E72B2060AB0040A1BE /* ContentView.swift */,
+				0EFF3A132B20D9D70040A1BE /* Manager */,
+				0EFF39FE2B20772A0040A1BE /* Components */,
+				0EFF39F32B2060D20040A1BE /* Screens */,
 				0EFF39E92B2060AD0040A1BE /* Assets.xcassets */,
 				0EFF39EB2B2060AD0040A1BE /* Preview Content */,
 			);
@@ -65,6 +111,127 @@
 				0EFF39EC2B2060AD0040A1BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0EFF39F32B2060D20040A1BE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A202B219D9C0040A1BE /* Main */,
+				0EFF39F42B2060EF0040A1BE /* Home */,
+				0EFF39FA2B20747E0040A1BE /* Categories */,
+				0EFF3A042B20956C0040A1BE /* Category */,
+				0EFF3A0A2B20B50B0040A1BE /* AboutItem */,
+				0EFF3A1D2B218B100040A1BE /* Address */,
+				0EFF3A262B2202650040A1BE /* Billing */,
+				0EFF3A2B2B2222ED0040A1BE /* Profile */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0EFF39F42B2060EF0040A1BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF39F52B2060FF0040A1BE /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0EFF39FA2B20747E0040A1BE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF39FB2B20748F0040A1BE /* Categories.swift */,
+				0EFF3A0D2B20D6E30040A1BE /* CategoriesViewModel.swift */,
+				0EFF3A0F2B20D6F90040A1BE /* CategoriesModel.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0EFF39FE2B20772A0040A1BE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A072B209D670040A1BE /* CategoriesItem */,
+				0EFF3A012B208D190040A1BE /* CategoryItem */,
+				0EFF39FF2B2077650040A1BE /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0EFF3A012B208D190040A1BE /* CategoryItem */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A022B208E130040A1BE /* CategoryItem.swift */,
+			);
+			path = CategoryItem;
+			sourceTree = "<group>";
+		};
+		0EFF3A042B20956C0040A1BE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A052B2095890040A1BE /* Category.swift */,
+				0EFF3A172B20E42F0040A1BE /* CategoryViewModel.swift */,
+				0EFF3A192B20E5950040A1BE /* CategoryModel.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0EFF3A072B209D670040A1BE /* CategoriesItem */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A082B209D870040A1BE /* CategoriesItem.swift */,
+			);
+			path = CategoriesItem;
+			sourceTree = "<group>";
+		};
+		0EFF3A0A2B20B50B0040A1BE /* AboutItem */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A0B2B20B5230040A1BE /* AboutItem.swift */,
+				0EFF3A1B2B2167760040A1BE /* AboutItemViewModel.swift */,
+			);
+			path = AboutItem;
+			sourceTree = "<group>";
+		};
+		0EFF3A132B20D9D70040A1BE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A142B20D9ED0040A1BE /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0EFF3A1D2B218B100040A1BE /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A1E2B218B4D0040A1BE /* Address.swift */,
+				0EFF3A232B21D2710040A1BE /* AddressViewModel.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		0EFF3A202B219D9C0040A1BE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A212B219DBA0040A1BE /* Main.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0EFF3A262B2202650040A1BE /* Billing */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A272B2202770040A1BE /* Billing.swift */,
+				0EFF3A292B2210950040A1BE /* BillingViewModel.swift */,
+			);
+			path = Billing;
+			sourceTree = "<group>";
+		};
+		0EFF3A2B2B2222ED0040A1BE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A2C2B2223060040A1BE /* Profile.swift */,
+				0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +250,10 @@
 			dependencies = (
 			);
 			name = AssignmentMuseWearables;
+			packageProductDependencies = (
+				0EFF3A312B222A5C0040A1BE /* SQLite */,
+				0EFF3A342B2238160040A1BE /* Stripe */,
+			);
 			productName = AssignmentMuseWearables;
 			productReference = 0EFF39E22B2060AB0040A1BE /* AssignmentMuseWearables.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +282,10 @@
 				Base,
 			);
 			mainGroup = 0EFF39D92B2060AB0040A1BE;
+			packageReferences = (
+				0EFF3A302B222A5C0040A1BE /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				0EFF3A332B2238160040A1BE /* XCRemoteSwiftPackageReference "stripe-ios-spm" */,
+			);
 			productRefGroup = 0EFF39E32B2060AB0040A1BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +312,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EFF39E82B2060AB0040A1BE /* ContentView.swift in Sources */,
+				0EFF3A1A2B20E5950040A1BE /* CategoryModel.swift in Sources */,
+				0EFF3A2D2B2223060040A1BE /* Profile.swift in Sources */,
+				0EFF39F62B2060FF0040A1BE /* Home.swift in Sources */,
+				0EFF3A002B2077650040A1BE /* SearchBar.swift in Sources */,
 				0EFF39E62B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift in Sources */,
+				0EFF3A032B208E130040A1BE /* CategoryItem.swift in Sources */,
+				0EFF3A2F2B2223110040A1BE /* ProfileViewModel.swift in Sources */,
+				0EFF3A182B20E42F0040A1BE /* CategoryViewModel.swift in Sources */,
+				0EFF3A152B20D9ED0040A1BE /* NetworkManager.swift in Sources */,
+				0EFF3A282B2202770040A1BE /* Billing.swift in Sources */,
+				0EFF3A0C2B20B5230040A1BE /* AboutItem.swift in Sources */,
+				0EFF3A102B20D6F90040A1BE /* CategoriesModel.swift in Sources */,
+				0EFF3A1F2B218B4D0040A1BE /* Address.swift in Sources */,
+				0EFF3A222B219DBA0040A1BE /* Main.swift in Sources */,
+				0EFF3A1C2B2167760040A1BE /* AboutItemViewModel.swift in Sources */,
+				0EFF3A2A2B2210950040A1BE /* BillingViewModel.swift in Sources */,
+				0EFF3A092B209D870040A1BE /* CategoriesItem.swift in Sources */,
+				0EFF39FC2B20748F0040A1BE /* Categories.swift in Sources */,
+				0EFF3A242B21D2710040A1BE /* AddressViewModel.swift in Sources */,
+				0EFF3A0E2B20D6E30040A1BE /* CategoriesViewModel.swift in Sources */,
+				0EFF3A062B2095890040A1BE /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +463,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AssignmentMuseWearables/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssignmentMuseWearables/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AssignmentMuseWearables/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssignmentMuseWearables/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +533,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0EFF3A302B222A5C0040A1BE /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		0EFF3A332B2238160040A1BE /* XCRemoteSwiftPackageReference "stripe-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EFF3A312B222A5C0040A1BE /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EFF3A302B222A5C0040A1BE /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		0EFF3A342B2238160040A1BE /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EFF3A332B2238160040A1BE /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = Stripe;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EFF39DA2B2060AB0040A1BE /* Project object */;
 }

@@ -9,13 +9,35 @@ import SwiftUI
 
 struct CategoryItem: View {
     var categoryItem:CategoryModel
+    var quantity:Int?
     var body: some View {
         GeometryReader{ geometry in
-            HStack(alignment: .top){
-                Image("vegetables")
-                    .resizable()
-                    .frame(width: 175,height: 150)
-                    .cornerRadius(10)
+            HStack(alignment: .top) {
+                
+                if NetworkMonitor.shared.isConnected{
+                    AsyncImage(
+                        url: URL(string: categoryItem.thumbnailImage),
+                
+                        content: { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 175,height: 150)
+                                .cornerRadius(10)
+                        },
+                        placeholder: {
+                            ProgressView()
+                                .frame(width: 175,height: 150)
+                                .cornerRadius(10)
+                        }
+                    )
+                } else {
+                    Image(uiImage: UIImage(data: categoryItem.offlineImage!)!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 175,height: 150)
+                        .cornerRadius(10)
+                }
+                    
                 VStack (alignment:.leading){
                     Text(categoryItem.typeName)
                         .font(.system(size: 25,weight: .regular))
@@ -24,7 +46,12 @@ struct CategoryItem: View {
                             .font(.system(size: 15,weight: .regular))
                         Text("$/Kg ")
                             .font(.system(size: 15,weight: .regular))
+                       
                     }.padding(.top,5)
+                    if let quantity = quantity {
+                        Text("Quantity : \(quantity) ")
+                            .font(.system(size: 15,weight: .regular))
+                    }
                 }.padding()
             }.foregroundColor(.black)
           

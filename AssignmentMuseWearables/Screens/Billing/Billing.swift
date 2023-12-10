@@ -52,7 +52,8 @@ struct Billing: View {
                         }.padding()
                     }.frame(width: geometry.size.width)
                 }
-            }.navigationTitle("Credit / Debit card")
+            }.navigationBarBackButtonHidden(true)
+           
         }
     }
 }

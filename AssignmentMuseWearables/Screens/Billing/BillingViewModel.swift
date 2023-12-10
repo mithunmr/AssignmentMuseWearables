@@ -35,13 +35,12 @@ class BillingFieldmodule {
             self.inputType = .numberPad
         case .name:
             self.inputType = .alphabet
-            
         }
     }
     
 }
 
-class BillingViewModel:ObservableObject{
+class BillingViewModel: ObservableObject {
     @Published var billingFileds:[BillingFieldmodule] = BillingFields.allCases.map({
         switch $0{
         case .cvc:
@@ -50,5 +49,14 @@ class BillingViewModel:ObservableObject{
              return BillingFieldmodule(title: $0.rawValue, type: $0, hint: false, hintImage: "")
         }
     })
+    
+    
+    func updateValue(value:String,fieldType:BillingFields){
+        self.billingFileds.forEach{
+            if $0.type == fieldType{
+                $0.value = value
+            }
+        }
+    }
     
 }

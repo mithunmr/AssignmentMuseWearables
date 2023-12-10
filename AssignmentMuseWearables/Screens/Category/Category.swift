@@ -14,6 +14,7 @@ struct Category: View {
     init(categoryViewModel: CategoryViewModel = CategoryViewModel(), categoryType:String) {
         self.categoryViewModel = categoryViewModel
         self.categoryViewModel.categoryType = categoryType
+        self.categoryViewModel.fetchCategory()
      
     }
 
@@ -42,9 +43,7 @@ struct Category: View {
             }
             .background(Color("#EEEEEE"))
             .navigationTitle(categoryViewModel.categoryType)
-            .onAppear {
-              categoryViewModel.fetchCategory()
-            }
+            
             //toolbar
         }
     }

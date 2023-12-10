@@ -21,12 +21,11 @@ struct Main: View {
                     case .categories:
                         Categories()
                     case .cart:
-                        Address()
+                        Cart()
                     case .profile:
-                        Profile()
+                        Billing()
                     }
                 
-                    
                     //Bottom Tab Bar
                     BottomTabBar(selectedTab: $selectedTab, tabItems: tabItems)
                 }

@@ -14,6 +14,11 @@ struct CategoryModel:Codable,Hashable {
     var sliderImages:[String]
     var pricePerPiece:Double
     var weightPerPiece:Double
+    var offlineImage:Data?
+    
+    private enum CodingKeys: String, CodingKey {
+        case typeID,typeName,description,thumbnailImage,sliderImages,pricePerPiece,weightPerPiece
+    }
 }
 
 

@@ -7,12 +7,19 @@
 
 import Foundation
 
-struct CategoriesModel:Codable,Hashable {
+struct CategoriesModel: Codable, Hashable {
     var categoryID:Int
     var categoryType:String
     var categoryName:String
     var categoryImage:String
     var totalItems:Int
+    var offlineImageData:Data?
+    
+    
+    private enum CodingKeys: String, CodingKey {
+           case categoryID, categoryType, categoryName , categoryImage, totalItems
+       }
+
 }
 
 //

@@ -31,8 +31,9 @@ struct Home: View {
     
     func orderNow(){
         showSheet.toggle()
-        goToCategories.toggle()
-        
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            goToCategories.toggle()
+        }
     }
 }
 
@@ -46,12 +47,7 @@ struct BottomSheet:View {
                     Circle()
                         .stroke(lineWidth: 1)
                         .foregroundColor(.gray)
-                    
                     Image("Box")
-                    
-                    
-                    
-                    
                 }.frame(width: 100,height: 100)
                     .padding(.top,30)
                 Text("Non-Contact Deliveries")
@@ -74,7 +70,6 @@ struct BottomSheet:View {
                     .padding(.vertical)
                 Button{
                     dismiss.toggle()
-                    
                 }label: {
                     Text("Dismiss")
                         .foregroundColor(.black)

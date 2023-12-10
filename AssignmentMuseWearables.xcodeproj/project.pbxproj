@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E70DFCF2B24B32B0035BCF3 /* SQLiteCategoryCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70DFCE2B24B32B0035BCF3 /* SQLiteCategoryCommands.swift */; };
+		0E70DFD22B25552B0035BCF3 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70DFD12B25552B0035BCF3 /* Cart.swift */; };
+		0E70DFD42B2555DB0035BCF3 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70DFD32B2555DB0035BCF3 /* CartViewModel.swift */; };
+		0E70DFD72B2556C60035BCF3 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70DFD62B2556C60035BCF3 /* AppModule.swift */; };
+		0E70DFD92B2557610035BCF3 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70DFD82B2557610035BCF3 /* CartManager.swift */; };
+		0E70DFDB2B2559FD0035BCF3 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70DFDA2B2559FD0035BCF3 /* CartModel.swift */; };
 		0EFF39E62B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF39E52B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift */; };
 		0EFF39EA2B2060AD0040A1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFF39E92B2060AD0040A1BE /* Assets.xcassets */; };
 		0EFF39ED2B2060AD0040A1BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFF39EC2B2060AD0040A1BE /* Preview Assets.xcassets */; };
@@ -32,9 +38,18 @@
 		0EFF3A2F2B2223110040A1BE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */; };
 		0EFF3A322B222A5C0040A1BE /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFF3A312B222A5C0040A1BE /* SQLite */; };
 		0EFF3A352B2238160040A1BE /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFF3A342B2238160040A1BE /* Stripe */; };
+		0EFF3A382B22ACB10040A1BE /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A372B22ACB10040A1BE /* SQLiteDatabase.swift */; };
+		0EFF3A3A2B22AE420040A1BE /* SQLiteCategoriesCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A392B22AE420040A1BE /* SQLiteCategoriesCommands.swift */; };
+		0EFF3A3C2B22B8CC0040A1BE /* OfflineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A3B2B22B8CC0040A1BE /* OfflineManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E70DFCE2B24B32B0035BCF3 /* SQLiteCategoryCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCategoryCommands.swift; sourceTree = "<group>"; };
+		0E70DFD12B25552B0035BCF3 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		0E70DFD32B2555DB0035BCF3 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		0E70DFD62B2556C60035BCF3 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		0E70DFD82B2557610035BCF3 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		0E70DFDA2B2559FD0035BCF3 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		0EFF39E22B2060AB0040A1BE /* AssignmentMuseWearables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentMuseWearables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFF39E52B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentMuseWearablesApp.swift; sourceTree = "<group>"; };
 		0EFF39E92B2060AD0040A1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +75,9 @@
 		0EFF3A292B2210950040A1BE /* BillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewModel.swift; sourceTree = "<group>"; };
 		0EFF3A2C2B2223060040A1BE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A372B22ACB10040A1BE /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		0EFF3A392B22AE420040A1BE /* SQLiteCategoriesCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCategoriesCommands.swift; sourceTree = "<group>"; };
+		0EFF3A3B2B22B8CC0040A1BE /* OfflineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E70DFD02B2554AB0035BCF3 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				0E70DFD12B25552B0035BCF3 /* Cart.swift */,
+				0E70DFD32B2555DB0035BCF3 /* CartViewModel.swift */,
+				0E70DFDA2B2559FD0035BCF3 /* CartModel.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		0E70DFD52B2556B10035BCF3 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+				0E70DFD62B2556C60035BCF3 /* AppModule.swift */,
+			);
+			path = AppModule;
+			sourceTree = "<group>";
+		};
 		0EFF39D92B2060AB0040A1BE = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +132,8 @@
 			children = (
 				0EFF3A162B20DC7A0040A1BE /* Info.plist */,
 				0EFF39E52B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift */,
+				0E70DFD52B2556B10035BCF3 /* AppModule */,
+				0EFF3A362B22AC780040A1BE /* SQLiteDataBase */,
 				0EFF3A132B20D9D70040A1BE /* Manager */,
 				0EFF39FE2B20772A0040A1BE /* Components */,
 				0EFF39F32B2060D20040A1BE /* Screens */,
@@ -123,6 +161,7 @@
 				0EFF3A0A2B20B50B0040A1BE /* AboutItem */,
 				0EFF3A1D2B218B100040A1BE /* Address */,
 				0EFF3A262B2202650040A1BE /* Billing */,
+				0E70DFD02B2554AB0035BCF3 /* Cart */,
 				0EFF3A2B2B2222ED0040A1BE /* Profile */,
 			);
 			path = Screens;
@@ -195,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				0EFF3A142B20D9ED0040A1BE /* NetworkManager.swift */,
+				0EFF3A3B2B22B8CC0040A1BE /* OfflineManager.swift */,
+				0E70DFD82B2557610035BCF3 /* CartManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -232,6 +273,16 @@
 				0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		0EFF3A362B22AC780040A1BE /* SQLiteDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF3A372B22ACB10040A1BE /* SQLiteDatabase.swift */,
+				0EFF3A392B22AE420040A1BE /* SQLiteCategoriesCommands.swift */,
+				0E70DFCE2B24B32B0035BCF3 /* SQLiteCategoryCommands.swift */,
+			);
+			path = SQLiteDataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,12 +366,20 @@
 				0EFF3A1A2B20E5950040A1BE /* CategoryModel.swift in Sources */,
 				0EFF3A2D2B2223060040A1BE /* Profile.swift in Sources */,
 				0EFF39F62B2060FF0040A1BE /* Home.swift in Sources */,
+				0E70DFD22B25552B0035BCF3 /* Cart.swift in Sources */,
 				0EFF3A002B2077650040A1BE /* SearchBar.swift in Sources */,
 				0EFF39E62B2060AB0040A1BE /* AssignmentMuseWearablesApp.swift in Sources */,
+				0E70DFD42B2555DB0035BCF3 /* CartViewModel.swift in Sources */,
+				0E70DFD92B2557610035BCF3 /* CartManager.swift in Sources */,
+				0EFF3A3C2B22B8CC0040A1BE /* OfflineManager.swift in Sources */,
 				0EFF3A032B208E130040A1BE /* CategoryItem.swift in Sources */,
+				0E70DFD72B2556C60035BCF3 /* AppModule.swift in Sources */,
 				0EFF3A2F2B2223110040A1BE /* ProfileViewModel.swift in Sources */,
 				0EFF3A182B20E42F0040A1BE /* CategoryViewModel.swift in Sources */,
+				0EFF3A382B22ACB10040A1BE /* SQLiteDatabase.swift in Sources */,
 				0EFF3A152B20D9ED0040A1BE /* NetworkManager.swift in Sources */,
+				0E70DFDB2B2559FD0035BCF3 /* CartModel.swift in Sources */,
+				0EFF3A3A2B22AE420040A1BE /* SQLiteCategoriesCommands.swift in Sources */,
 				0EFF3A282B2202770040A1BE /* Billing.swift in Sources */,
 				0EFF3A0C2B20B5230040A1BE /* AboutItem.swift in Sources */,
 				0EFF3A102B20D6F90040A1BE /* CategoriesModel.swift in Sources */,
@@ -330,6 +389,7 @@
 				0EFF3A2A2B2210950040A1BE /* BillingViewModel.swift in Sources */,
 				0EFF3A092B209D870040A1BE /* CategoriesItem.swift in Sources */,
 				0EFF39FC2B20748F0040A1BE /* Categories.swift in Sources */,
+				0E70DFCF2B24B32B0035BCF3 /* SQLiteCategoryCommands.swift in Sources */,
 				0EFF3A242B21D2710040A1BE /* AddressViewModel.swift in Sources */,
 				0EFF3A0E2B20D6E30040A1BE /* CategoriesViewModel.swift in Sources */,
 				0EFF3A062B2095890040A1BE /* Category.swift in Sources */,

@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct AssignmentMuseWearablesApp: App {
+    
+    init() {
+        NetworkMonitor.shared.startMonitoring()
+    }
+  
     var body: some Scene {
         WindowGroup {
            Home()

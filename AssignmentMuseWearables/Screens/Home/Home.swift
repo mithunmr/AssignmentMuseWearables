@@ -10,6 +10,10 @@ import SwiftUI
 struct Home: View {
     @State var showSheet = false
     @State var goToCategories = false
+    @ObservedObject var homeViewModel:HomeViewModel
+    init(sheetType:HomePopSheet) {
+        homeViewModel = HomeViewModel(sheetType: sheetType)
+    }
     var body: some View {
         NavigationStack {
             NavigationLink(destination: Main(),isActive: $goToCategories) {EmptyView()}
@@ -17,16 +21,18 @@ struct Home: View {
                 Image("HomeBG")
             }
             .sheet(isPresented: $showSheet){
-                BottomSheet(dismiss: $showSheet, orderNow: orderNow)
-                    .presentationDetents([.medium])
-                    .background(.clear)
+                if let homeData = homeViewModel.homeData {
+                    BottomSheet(dismiss: $showSheet, homeData: homeData, orderNow: orderNow)
+                        .presentationDetents([.medium])
+                        .background(.clear)
+                }
+             
             }
             .background(LinearGradient(colors: [Color("#BD8AFFCD"),Color("#B588EE80"),.white], startPoint: .top, endPoint: .center))
             .onAppear{
                 showSheet.toggle()
             }
         }
-        
     }
     
     func orderNow(){
@@ -39,6 +45,7 @@ struct Home: View {
 
 struct BottomSheet:View {
     @Binding var dismiss:Bool
+    var homeData:HomeModel
     var orderNow:()->Void
     var body: some View {
         GeometryReader{ geometry in
@@ -50,10 +57,10 @@ struct BottomSheet:View {
                     Image("Box")
                 }.frame(width: 100,height: 100)
                     .padding(.top,30)
-                Text("Non-Contact Deliveries")
+                Text(homeData.title)
                     .font(.system(size: 34,weight: .bold))
                     .padding(11)
-                Text("When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.")
+                Text(homeData.discription)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 15,weight: .regular))
                     .foregroundColor(Color("#9586A8"))
@@ -62,7 +69,7 @@ struct BottomSheet:View {
                 Button{
                     orderNow()
                 }label: {
-                    Text("ORDER NOW")
+                    Text(homeData.greenButtonTitle)
                         .foregroundColor(.white)
                 }.frame(width: geometry.size.width*0.8, height:  52)
                     .background(Color("OrderNow"))
@@ -71,7 +78,7 @@ struct BottomSheet:View {
                 Button{
                     dismiss.toggle()
                 }label: {
-                    Text("Dismiss")
+                    Text(homeData.witeButtonTitle)
                         .foregroundColor(.black)
                 }.frame(width: geometry.size.width*0.8, height:  46)
                     .background(.white)
@@ -86,6 +93,6 @@ struct BottomSheet:View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(sheetType: .wellcome)
     }
 }

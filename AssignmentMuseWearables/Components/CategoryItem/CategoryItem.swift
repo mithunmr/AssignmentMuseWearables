@@ -42,7 +42,7 @@ struct CategoryItem: View {
                     Text(categoryItem.typeName)
                         .font(.system(size: 25,weight: .regular))
                     HStack {
-                        Text("12")
+                        Text("\(categoryItem.pricePerPiece,specifier: "%.1f")")
                             .font(.system(size: 15,weight: .regular))
                         Text("$/Kg ")
                             .font(.system(size: 15,weight: .regular))

@@ -8,8 +8,13 @@
 import Foundation
 class CartViewModel:ObservableObject {
     
-    @Published var cartItems:[CartModel] = []
-    
+    @Published var cartItems:[CartModel] = [] {
+        didSet {
+            totalPrice = cartItems.reduce(0, {$0 + (($1.item.pricePerPiece) * Double($1.quantity))})
+        }
+    }
+    @Published var totalPrice:Double = 0.0
+    @Published var goToBilling:Bool = false
     init() {
         loadCartItem()
     }
@@ -23,5 +28,24 @@ class CartViewModel:ObservableObject {
         AppModule.shared.cartManager.deleteItemFromCart(itemName: itemName)
     }
   
+    func CheckOut(){
+        let theCheckOutData = CheckOutModel(amount:Int(totalPrice), currency: "usd")
+        PaymentManager.shared.checkOut(checkOutData:theCheckOutData){result in
+            DispatchQueue.main.async {
+                if result {
+                    self.goToBilling = true
+                }else{
+                    self.goToBilling = false
+                }
+            }
+        }
+    }
+}
 
+
+extension Double {
+    func roundTo(places: Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
 }

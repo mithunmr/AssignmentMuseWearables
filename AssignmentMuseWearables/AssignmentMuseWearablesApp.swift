@@ -6,17 +6,19 @@
 //
 
 import SwiftUI
+import Stripe
 
 @main
 struct AssignmentMuseWearablesApp: App {
-    
+ 
     init() {
         NetworkMonitor.shared.startMonitoring()
+   
     }
   
     var body: some Scene {
         WindowGroup {
-           Home()
+            Home(sheetType: .wellcome)
         }
     }
 }

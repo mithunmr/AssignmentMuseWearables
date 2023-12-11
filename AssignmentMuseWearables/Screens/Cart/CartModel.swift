@@ -11,3 +11,11 @@ struct CartModel:Hashable {
     var item:CategoryModel
     var quantity:Int
 }
+
+
+struct CheckOutModel:Codable{
+    var amount:Int
+    var currency:String
+}
+
+

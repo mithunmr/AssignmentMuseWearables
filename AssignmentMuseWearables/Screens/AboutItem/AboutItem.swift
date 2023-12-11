@@ -59,7 +59,7 @@ struct AboutItem: View {
                                     .font(.system(size: 30,weight: .light))
                             }
                             .padding(.vertical,2)
-                            Text("~\(aboutViewModel.item.weightPerPiece) gr/ piece")
+                            Text("~\(aboutViewModel.item.weightPerPiece,specifier: "%.2f") gr/ piece")
                                 .font(.system(size: 17,weight: .semibold))
                                 .foregroundColor(.green)
                                 .padding(.vertical,2)

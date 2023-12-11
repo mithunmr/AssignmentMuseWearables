@@ -36,12 +36,22 @@ class AddressViewModel:ObservableObject {
         DevliveryOption(deliveryType: .bike, image: "Bike", title: "By Courier", isSlected: false),
         DevliveryOption(deliveryType: .drone, image: "Drone", title: "By Drone", isSlected: false)
     ]
-    
-    
+    @Published var goToHome = false
+    @Published var ShowFailed = false
     func selectDevliveryOption(deliveryType:DeliveryType) {
+        objectWillChange.send()
         self.deliveryOptions.forEach{ $0.isSlected = ($0.deliveryType == deliveryType) ? true : false}
-        
-        
+        objectWillChange.send()
     }
     
+    func makePayment(){
+        PaymentManager.shared.submitPayment{ response in
+            switch response {
+            case.succeeded:
+                self.goToHome = true
+            case.canceled ,.failed:
+                self.ShowFailed = true
+            }
+        }
+    }
 }

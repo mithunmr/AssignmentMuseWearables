@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Stripe
 class PaymentManager {
     private init(){}
     static var shared = PaymentManager()
     var checkOutResponse:CheckOutResponseModel?
+    private var paymentMethodParams:STPPaymentMethodParams = STPPaymentMethodParams()
+    let paymentGatewayController = PaymentGatewayController()
     let BackendUrl = "http:/ec2-15-207-119-97.ap-south-1.compute.amazonaws.com:3000/start/payment"
     
     func checkOut(checkOutData:CheckOutModel, complition: @escaping (Bool)-> Void){
@@ -34,6 +37,43 @@ class PaymentManager {
                 complition(true)
             })
             task.resume()
+        }
+    }
+    
+    private  func prePareCardDetails(cardFields:[CardFieldmodule]) -> Bool{
+        paymentMethodParams.type = .card
+        let cardParams = STPPaymentMethodCardParams()
+        cardFields.forEach({
+            switch $0.type{
+            case .name:
+                break
+            case .cardNumber:
+                cardParams.number = $0.value
+            case .expiryDate:
+                cardParams.expMonth = Int($0.value.split(separator: "/")[0]) as NSNumber?
+                cardParams.expYear = Int($0.value.split(separator: "/")[1]) as NSNumber?
+            case .cvc:
+                cardParams.cvc = $0.value
+            }
+        })
+        paymentMethodParams.card = cardParams
+        return true
+    }
+    
+    
+    func addCardDetails(cardFields:[CardFieldmodule],  complition:@escaping (Bool)->Void) {
+       complition(prePareCardDetails(cardFields: cardFields))
+        
+    }
+    
+    func submitPayment(complition:@escaping (STPPaymentHandlerActionStatus)->Void){
+        if let checkOutData = PaymentManager.shared.checkOutResponse {
+            STPAPIClient.shared.publishableKey = checkOutData.publishableKey
+            let paymnetIntentParam = STPPaymentIntentParams(clientSecret: checkOutData.paymentIntent)
+            paymnetIntentParam.paymentMethodParams =  paymentMethodParams
+            paymentGatewayController.submitPayment(intent:paymnetIntentParam){(status, intent, error) in
+                complition(status)
+            }
         }
     }
 }

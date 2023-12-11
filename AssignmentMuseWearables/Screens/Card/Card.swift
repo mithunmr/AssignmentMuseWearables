@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct Billing: View {
+struct Card: View {
     
-    @ObservedObject var billingViewModel = BillingViewModel()
-    @State var goToHome = false
-    @State var ShowFailed = false
+    @ObservedObject var cardViewModel = CardViewModel()
+    
+  
     var body: some View {
         
         NavigationView {
@@ -44,24 +44,16 @@ struct Billing: View {
                         .frame(width: geometry.size.width)
                         
                         VStack(alignment: .leading){
-                            ForEach(billingViewModel.billingFileds,id: \.type){ field in
-                                BillingField( onTextUpdate:{ text in
-                                    billingViewModel.updateValue(value: text, fieldType: field.type)
+                            ForEach(cardViewModel.cardFileds,id: \.type){ field in
+                                CardField( onTextUpdate:{ text in
+                                    cardViewModel.updateValue(value: text, fieldType: field.type)
                                 }, fieldModule: field)
                             }
                         }.padding()
                         VStack(alignment: .center){
+                            NavigationLink(destination: Address(),isActive: $cardViewModel.goToAddress, label: {EmptyView()})
                             Button {
-                                billingViewModel.pay(){ status in
-                                    switch status {
-                                    case .failed , .canceled :
-                                        ShowFailed.toggle()
-                                    case .succeeded:
-                                        goToHome.toggle()
-                                        NavigationLink(destination: Home(sheetType: .thankyou),isActive: $goToHome, label: {EmptyView()})
-                                    }
-                                    
-                                }
+                                cardViewModel.addCard()
                             }label: {
                                 Text("USE THIS CARD")
                                     .font(.system(size: 15,weight: .semibold))
@@ -77,9 +69,7 @@ struct Billing: View {
                         
                     }.frame(width: geometry.size.width)
                 }
-                .popover(isPresented: $ShowFailed){
-                    Text("Failed Payment")
-                }
+               
             }.navigationBarBackButtonHidden(true)
         }
     }
@@ -87,16 +77,16 @@ struct Billing: View {
 
 struct Billing_Previews: PreviewProvider {
     static var previews: some View {
-        Billing()
+        Card()
     }
 }
 
 
 
-struct BillingField: View {
+struct CardField: View {
     @State var text: String = ""
     var  onTextUpdate:(String)->Void
-    var fieldModule:BillingFieldmodule
+    var fieldModule:CardFieldmodule
     var body: some View{
         Section {
             ZStack(alignment: .trailing) {
@@ -112,7 +102,7 @@ struct BillingField: View {
                     .onChange(of: text){ text in
                         onTextUpdate(text)
                     }
-                 
+                
                 
                 if fieldModule.hint {
                     Button{

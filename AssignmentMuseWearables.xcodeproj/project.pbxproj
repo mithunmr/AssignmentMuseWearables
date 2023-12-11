@@ -36,10 +36,8 @@
 		0EFF3A1F2B218B4D0040A1BE /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A1E2B218B4D0040A1BE /* Address.swift */; };
 		0EFF3A222B219DBA0040A1BE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A212B219DBA0040A1BE /* Main.swift */; };
 		0EFF3A242B21D2710040A1BE /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A232B21D2710040A1BE /* AddressViewModel.swift */; };
-		0EFF3A282B2202770040A1BE /* Billing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A272B2202770040A1BE /* Billing.swift */; };
-		0EFF3A2A2B2210950040A1BE /* BillingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A292B2210950040A1BE /* BillingViewModel.swift */; };
-		0EFF3A2D2B2223060040A1BE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A2C2B2223060040A1BE /* Profile.swift */; };
-		0EFF3A2F2B2223110040A1BE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */; };
+		0EFF3A282B2202770040A1BE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A272B2202770040A1BE /* Card.swift */; };
+		0EFF3A2A2B2210950040A1BE /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A292B2210950040A1BE /* CardViewModel.swift */; };
 		0EFF3A322B222A5C0040A1BE /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFF3A312B222A5C0040A1BE /* SQLite */; };
 		0EFF3A352B2238160040A1BE /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFF3A342B2238160040A1BE /* Stripe */; };
 		0EFF3A382B22ACB10040A1BE /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFF3A372B22ACB10040A1BE /* SQLiteDatabase.swift */; };
@@ -79,10 +77,8 @@
 		0EFF3A1E2B218B4D0040A1BE /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		0EFF3A212B219DBA0040A1BE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		0EFF3A232B21D2710040A1BE /* AddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewModel.swift; sourceTree = "<group>"; };
-		0EFF3A272B2202770040A1BE /* Billing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billing.swift; sourceTree = "<group>"; };
-		0EFF3A292B2210950040A1BE /* BillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingViewModel.swift; sourceTree = "<group>"; };
-		0EFF3A2C2B2223060040A1BE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0EFF3A272B2202770040A1BE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0EFF3A292B2210950040A1BE /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		0EFF3A372B22ACB10040A1BE /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
 		0EFF3A392B22AE420040A1BE /* SQLiteCategoriesCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCategoriesCommands.swift; sourceTree = "<group>"; };
 		0EFF3A3B2B22B8CC0040A1BE /* OfflineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineManager.swift; sourceTree = "<group>"; };
@@ -177,9 +173,8 @@
 				0EFF3A042B20956C0040A1BE /* Category */,
 				0EFF3A0A2B20B50B0040A1BE /* AboutItem */,
 				0EFF3A1D2B218B100040A1BE /* Address */,
-				0EFF3A262B2202650040A1BE /* Billing */,
+				0EFF3A262B2202650040A1BE /* Card */,
 				0E70DFD02B2554AB0035BCF3 /* Cart */,
-				0EFF3A2B2B2222ED0040A1BE /* Profile */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -277,22 +272,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0EFF3A262B2202650040A1BE /* Billing */ = {
+		0EFF3A262B2202650040A1BE /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				0EFF3A272B2202770040A1BE /* Billing.swift */,
-				0EFF3A292B2210950040A1BE /* BillingViewModel.swift */,
+				0EFF3A272B2202770040A1BE /* Card.swift */,
+				0EFF3A292B2210950040A1BE /* CardViewModel.swift */,
 			);
-			path = Billing;
-			sourceTree = "<group>";
-		};
-		0EFF3A2B2B2222ED0040A1BE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				0EFF3A2C2B2223060040A1BE /* Profile.swift */,
-				0EFF3A2E2B2223110040A1BE /* ProfileViewModel.swift */,
-			);
-			path = Profile;
+			path = Card;
 			sourceTree = "<group>";
 		};
 		0EFF3A362B22AC780040A1BE /* SQLiteDataBase */ = {
@@ -386,7 +372,6 @@
 				0E70DFDD2B25FB400035BCF3 /* PaymentManager.swift in Sources */,
 				0E70DFE22B2649DB0035BCF3 /* HomeViewModel.swift in Sources */,
 				0EFF3A1A2B20E5950040A1BE /* CategoryModel.swift in Sources */,
-				0EFF3A2D2B2223060040A1BE /* Profile.swift in Sources */,
 				0EFF39F62B2060FF0040A1BE /* Home.swift in Sources */,
 				0E70DFD22B25552B0035BCF3 /* Cart.swift in Sources */,
 				0EFF3A002B2077650040A1BE /* SearchBar.swift in Sources */,
@@ -396,21 +381,20 @@
 				0EFF3A3C2B22B8CC0040A1BE /* OfflineManager.swift in Sources */,
 				0EFF3A032B208E130040A1BE /* CategoryItem.swift in Sources */,
 				0E70DFD72B2556C60035BCF3 /* AppModule.swift in Sources */,
-				0EFF3A2F2B2223110040A1BE /* ProfileViewModel.swift in Sources */,
 				0E70DFE02B26214B0035BCF3 /* PaymentGatewayController.swift in Sources */,
 				0EFF3A182B20E42F0040A1BE /* CategoryViewModel.swift in Sources */,
 				0EFF3A382B22ACB10040A1BE /* SQLiteDatabase.swift in Sources */,
 				0EFF3A152B20D9ED0040A1BE /* NetworkManager.swift in Sources */,
 				0E70DFDB2B2559FD0035BCF3 /* CartModel.swift in Sources */,
 				0EFF3A3A2B22AE420040A1BE /* SQLiteCategoriesCommands.swift in Sources */,
-				0EFF3A282B2202770040A1BE /* Billing.swift in Sources */,
+				0EFF3A282B2202770040A1BE /* Card.swift in Sources */,
 				0EFF3A0C2B20B5230040A1BE /* AboutItem.swift in Sources */,
 				0EFF3A102B20D6F90040A1BE /* CategoriesModel.swift in Sources */,
 				0EFF3A1F2B218B4D0040A1BE /* Address.swift in Sources */,
 				0EFF3A222B219DBA0040A1BE /* Main.swift in Sources */,
 				0EFF3A1C2B2167760040A1BE /* AboutItemViewModel.swift in Sources */,
 				0E70DFE42B264A180035BCF3 /* HomeModel.swift in Sources */,
-				0EFF3A2A2B2210950040A1BE /* BillingViewModel.swift in Sources */,
+				0EFF3A2A2B2210950040A1BE /* CardViewModel.swift in Sources */,
 				0EFF3A092B209D870040A1BE /* CategoriesItem.swift in Sources */,
 				0EFF39FC2B20748F0040A1BE /* Categories.swift in Sources */,
 				0E70DFCF2B24B32B0035BCF3 /* SQLiteCategoryCommands.swift in Sources */,

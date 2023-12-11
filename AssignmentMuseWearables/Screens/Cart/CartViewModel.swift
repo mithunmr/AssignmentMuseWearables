@@ -14,7 +14,7 @@ class CartViewModel:ObservableObject {
         }
     }
     @Published var totalPrice:Double = 0.0
-    @Published var goToBilling:Bool = false
+    @Published var goToCard:Bool = false
     init() {
         loadCartItem()
     }
@@ -33,9 +33,9 @@ class CartViewModel:ObservableObject {
         PaymentManager.shared.checkOut(checkOutData:theCheckOutData){result in
             DispatchQueue.main.async {
                 if result {
-                    self.goToBilling = true
+                    self.goToCard = true
                 }else{
-                    self.goToBilling = false
+                    self.goToCard = false
                 }
             }
         }

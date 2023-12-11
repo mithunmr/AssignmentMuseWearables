@@ -9,7 +9,8 @@ import SwiftUI
 
 
 struct Address: View {
-    @StateObject var addressViewModel = AddressViewModel()
+    @ObservedObject var addressViewModel = AddressViewModel()
+  
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
@@ -58,10 +59,14 @@ struct Address: View {
                                 ForEach(addressViewModel.deliveryOptions,id:\.deliveryType){ type in
                                     HStack(){
                                         Image(type.image)
+                                            .renderingMode(.template)
+                                            .foregroundColor(type.isSlected ? Color("#7203FF") : .gray )
                                             .padding(.trailing)
+                                    
+                                        
                                         Text(type.title)
                                             .font(.system(size: 17))
-                                            .foregroundColor(.gray)
+                                            .foregroundColor(type.isSlected ? Color("#7203FF") : .gray )
                                         Spacer()
                                         
                                         if type.isSlected{
@@ -83,12 +88,32 @@ struct Address: View {
                         
                         SectionHeader(headerText: "Non-Contact Delivery",buttonType: .radio, action: {print("----")})
                         
+                        VStack(alignment: .center){
+                            NavigationLink(destination: Home(sheetType: .thankyou),isActive:$addressViewModel.goToHome , label: {EmptyView()})
+                            Button {
+                                addressViewModel.makePayment()
+                            }label: {
+                                Text("MAKE PAYMENT")
+                                    .font(.system(size: 15,weight: .semibold))
+                            }
+                            
+                            .frame(width: geometry.size.width*0.7 ,height: 46)
+                            .background(Color("OrderNow"))
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                        }
+                     
+                      
+                        
                         
                     }
                     .padding()
                     
                 }
-            }
+                .popover(isPresented: $addressViewModel.ShowFailed){
+                    Text("Failed Payment")
+                }
+            }.navigationBarTitleDisplayMode(.inline)
         }
     }
 }
